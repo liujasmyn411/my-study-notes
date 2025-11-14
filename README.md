@@ -27,11 +27,8 @@ GUI是图形用户界面，用VB(Visual Basic)实现。
 ```
 
 #### 标签属性
-<<<<<<< HEAD
 每个属性前都要有空格，id为通用属性，标签及标签属性不区分大小写。同一个标签写两个相同的属性，只会执行第一个属性。
-=======
-每个属性前都要有空格，id为通用属性，标签及标签属性不区分大小写，同一个标签写两个相同的属性，只会执行第一个属性。
->>>>>>> a2cd077e6b848bcdae1a4c8fc380b9565e8ac5d0
+
 ```
 <marquee loop="1" bgcolor="orange">reno<input type="password"></marquee> 
 <input disable> 
@@ -39,12 +36,6 @@ GUI是图形用户界面，用VB(Visual Basic)实现。
 ```
 <html>
   <head>
-<<<<<<< HEAD
-  <title>my-study-notes</title>
-
-=======
-    <title>my-study-notes</title>
->>>>>>> a2cd077e6b848bcdae1a4c8fc380b9565e8ac5d0
   </head>
   <body>
     <marquee>reno<input></marquee> <img><内联框架><a>
