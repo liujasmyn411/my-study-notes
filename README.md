@@ -34,10 +34,10 @@ GUI是图形用户界面，用VB(Visual Basic)实现。
 ```
 <html>
   <head>
-  <title>my-study-notes</title>
+    <title>my-study-notes</title>
   </head>
   <body>
-  <marquee>reno<input></marquee> <img><内联框架><a>
+    <marquee>reno<input></marquee> <img><内联框架><a>
   </body>
 </html>
 ```
