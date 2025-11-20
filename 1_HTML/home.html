@@ -227,6 +227,88 @@
       </tbody>
       <tfoot></tfoot>
     </table>
+    <!--br 换行标签-->
+    <a href="#">回到顶部</a><br>
+    <a href="">刷新页面</a>
+    <!--hr 分割线-->
+    <div>第一章</div>
+    <p>在 100 年前</p>
+    <hr>
+    <div>第二章</div>
+    <p>大结局</p>
+    <!--pre 按原文显示-->
+    <pre>
+      I     love     you
+        I   love  you
+            love
+    </pre>
+    <!--表单结构-->
+    <form action="https://search.jd.com/search" method="get" target="_blank">
+      <!-- 文本输入框 -->
+      <fieldset>
+        <legend>主要信息</legend>
+          <label for="zhanghu">账户：</label>
+          <input id="zhanghu" type="text" name="account" value="请输入账户" maxlength="10"><br>
+          <!-- 密码输入框 -->
+          <label>
+          密码：<input type="password" name="password" value="请输入密码" maxlength="6">
+          </label>
+          <br>
+          <!-- 单选框 -->
+          性别：
+          <input type="radio" name="gender" value="male" id="nan">
+          <label for="nan">男</label>
+          <label>
+          <input type="radio" name="gender" value="female" checked>女
+          </label>
+      </fieldset>
+       <br>
+       <!-- 多选框 -->
+      <fieldset>
+        <legend>附属信息</legend>
+          爱好：
+          <label>
+            <input type="checkbox" name="hobby" value="read" checked>读书
+          </label>
+          <label>
+            <input type="checkbox" name="hobby" value="travel">旅游
+          </label>
+          <input type="checkbox" name="hobby" value="sport" id="yundong">
+          <label for="yundong">运动</label>
+          <br>
+          <label for="qita">其他：</label>
+          <textarea id="qita" name="other" cols="20" rows="3" ></textarea><br>
+          籍贯：
+          <select name="place" >
+            <option value="冀">河北</option>
+            <option value="青">青岛</option>
+            <option value="川" selected>成都</option>
+          </select>
+      </fieldset>
+      <!-- 隐藏域 -->
+       <input type="hidden" name="from" value="bing"><br>
+      <!-- 确认按钮的写法 -->
+      <!-- <button type="submit">确认</button> -->
+      <input type="submit" value="确认"><br>
+      <!-- 重置按钮的写法 -->
+       <button type="reset">重置</button>
+       <input type="reset" value="点我重置"><br>
+      <!-- 普通按钮 -->
+      <button type="button">监测账户是否被注册</button>
+      <input type="button" value="监测账户是否被注册">
+    </form>
+  <!-- 禁用表单控件：disabled -->
+  <br>
+  <!-- 利用 iframe 嵌入一个普通网页 -->
+   <!-- <iframe src="https://www.miyoushe.com/" width="400" height="200" frameborder="1"></iframe><br> -->
+   <a href="https://www.miyoushe.com//zzz/" target="container">点我进入绝区零</a><br>
+
+   <form action="https://www.miyoushe.com//zzz//search" target="container">
+    <input type="text" name="keyword">
+    <input type="submit" value="搜索">
+   </form>
+
+   <iframe name="container" frameborder="0" width="450" height="250"></iframe>
   </body> 
 </html>  
 <!--  
