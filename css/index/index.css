@@ -69,13 +69,21 @@ body {
 
 /* 头部横幅 */
 .hero {
-    background: linear-gradient(135deg, #70f3ff 0%, #065279 70%); /* 渐变色*/
-    color: #f8f9fa;
-    text-align: center;
-    padding: 80px 20px 80px;
+    background: white; /* 外层背景设为白色 */
+    padding: 80px 0;
     margin-top: 60px;
 }
 
+.hero-content {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #70f3ff 0%, #065279 70%); /* 渐变色*/
+    color: #f8f9fa;
+    text-align: center;
+}
+
+/* 头像 */
 .avatar {
     width: 130px;
     height: 130px;
@@ -120,9 +128,12 @@ h2 {
     margin-bottom: 40px;
     font-size: 2em;
 }
+
+/* p是块级元素 */
 .container p {
     text-align: center;
 }
+
 
 /* 技能标签 */
 .skill-tags {
@@ -141,8 +152,9 @@ h2 {
     font-size: 0.9em;
 }
 
-/* 项目网格 */
-.project-grid {
+/* 网格 */
+/* 我的文章 */
+.project-grid,.work-grid,.life-grid {
     display: grid;
     /* 定义列布局 */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -151,7 +163,7 @@ h2 {
     margin-top: 40px;
 }
 
-.project-card {
+.project-card,.work-card,.life-card {
     background: white;
     padding: 30px;
     border-radius: 10px;
@@ -160,8 +172,20 @@ h2 {
     transition: transform 0.3s;
 }
 
-.project-card:hover {
+.project-card:hover,.work-card:hover,.life-card:hover {
     transform: translateY(-5px);
+}
+
+.project-card a {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-top: 15px;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+.project-card a:hover {
+    color: #0056b3;
 }
 
 
