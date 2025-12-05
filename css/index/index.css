@@ -120,11 +120,8 @@ h2 {
     margin-bottom: 40px;
     font-size: 2em;
 }
-
-p.container {
-    height: 20px;
-    line-height: 20px;
-    margin: 0 auto;
+.container p {
+    text-align: center;
 }
 
 /* 技能标签 */
