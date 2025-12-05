@@ -98,6 +98,15 @@
             background-color: #ccc;
             line-height: 30px;
         }
+
+        .photo1 {
+            width: 400px;
+            height: 400px;
+            border: 1px solid red;
+            background-size: contain;
+            background-image: url(./轮_眼.jpg);
+
+        }
      </style>
 </head>
 <body>
@@ -136,6 +145,26 @@
         <div class="footer">页脚</div>
 
     </div>
+    <br>
+    <!-- 长度单位 -->
+     vw vh
+     <br>
+    <!-- 新增盒子属性 -->
+     box-sizing:border-content,border-box
+     resize:horizontal 配合 overflow 
+     阴影：box-shadow：（水平位置，垂直位置，模糊程度，阴影外沿，阴影颜色，inset） 
+     不透明度：opacity
+     <br>
+    <!-- 新增背景属性 -->
+     background-origin：背景原点，content-box，padding-box，border-box
+     background-repeat：背景平铺方式
+    <div class="photo1"></div>
+
+    <!-- 引入新字体 -->
+     @font-face{
+        font-family："自定义字体名称"
+        src：url(地址)
+     }
 </body>
 </html>
 

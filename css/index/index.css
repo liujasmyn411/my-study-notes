@@ -1,0 +1,217 @@
+/* 基础重置和变量 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #000;
+    --secondary-color: #6c757d;
+    --text-color: #333;
+    --bg-color: #f8f9fa;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.container { /* 关于我部分的版心 */
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 导航栏样式 固定 */
+.navbar {
+    background: white;
+    /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {/* 导航栏左侧 */
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.logo {
+    color: var(--primary-color);
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;/* 移除列表的默认样式 */
+}
+
+.nav-menu li {
+    margin-left: 30px;
+}
+
+.nav-menu a {
+    text-decoration: none;/* 除去超链接的下划线，放在 reset 里面 */
+    color: var(--text-color);
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: var(--primary-color);
+}
+
+/* 头部横幅 */
+.hero {
+    background: linear-gradient(135deg, #70f3ff 0%, #065279 70%); /* 渐变色*/
+    color: #f8f9fa;
+    text-align: center;
+    padding: 80px 20px 80px;
+    margin-top: 60px;
+}
+
+.avatar {
+    width: 130px;
+    height: 130px;
+    border-radius: 20%;/* 头像圆角*/
+    border: 5px solid white;
+    margin-bottom: 20px;
+}
+
+.hero h1 {/* 这里是 reno*/
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    background: white;
+    color: var(--primary-color);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: transform 0.3s;
+    font-weight: normal;
+}
+
+.cta-button:hover {
+    transform: translateY(-5px);
+}
+
+/* 各部分通用样式 */
+section {
+    padding: 80px 0;
+}
+
+section:nth-child(even) {
+    background: var(--bg-color);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2em;
+}
+
+p.container {
+    height: 20px;
+    line-height: 20px;
+    margin: 0 auto;
+}
+
+/* 技能标签 */
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.skill-tag {
+    background: var(--primary-color);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+
+/* 项目网格 */
+.project-grid {
+    display: grid;
+    /* 定义列布局 */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* 网格项之间的间距 */
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.project-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* 联系链接 */
+.contact-links {
+    display: flex;
+    justify-content: center;
+    /* gap 用于设置网格或弹性盒子项之间的间距 */
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.contact-link:hover {
+    color: #0056b3;
+}
+
+/* 页脚 */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none; /* 简化处理，实际可以做成汉堡菜单 */
+    }
+    
+    .hero h1 {
+        font-size: 2em;
+    }
+    
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
