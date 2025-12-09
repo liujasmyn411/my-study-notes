@@ -94,9 +94,19 @@ body {
 .avatar {
     width: 130px;
     height: 130px;
-    border-radius: 20%;/* 头像圆角*/
-    border: 5px solid white;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15),
+                0 0 0 1px rgba(0, 0, 0, 0.05);
     margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover;
+}
+
+.avatar:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2),
+                0 0 0 1px rgba(0, 0, 0, 0.08);
 }
 
 .hero h1 {/* 这里是 reno*/
@@ -167,9 +177,18 @@ h2 {
 .about-photo {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 12px;
     object-fit: cover;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12),
+                0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-photo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18),
+                0 0 0 1px rgba(255, 255, 255, 0.6) inset;
 }
 
 .about-info {
@@ -263,6 +282,11 @@ h2 {
     color: #0056b3;
 }
 
+/* 联系我部分 */
+section.contact {
+    background-color: white !important;
+    background: white !important;
+}
 
 /* 联系链接 */
 .contact-links {
