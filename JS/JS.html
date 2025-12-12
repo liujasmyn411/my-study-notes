@@ -6,11 +6,12 @@
     <title>JS</title>
     <script>
         //浏览器弹出输入框，用户可以输入
-        // prompt(info)
+        prompt(info)
         //浏览器弹出警示框
-        // alert(msg)
+        alert(msg)
         //浏览器控制台打印输出信息
-        // console.log(msg) 
+        console.log(msg) 
+
         // 变量使用
         var age;
         age = 18;
@@ -18,10 +19,12 @@
         //变量的初始化：声明变量并赋值
         var myname = 'Reno'
         console.log(myname)
+
         //同时声明多个变量 变量不声明正常赋值也可以输出
         var myage = 20,
             year = 2003,
             month = 5;
+
         //交换两个变量，需要用到临时变量 temp
         var temp;
         var apple1 = '青苹果';
@@ -41,14 +44,35 @@
         console.log(num2);
         console.log(Number.MAX_VALUE);
         console.log(Number.MIN_VALUE);
-        
-        
-        
+        //用 isNaN 来判断非数字，是数字返回 false 不是数字返回 true
+        console.log(isNaN(12));
+        console.log(isNaN(我是 reno));
 
+        //检测字符串长度 length
+        var str1 = "my name is Reno";
+        console.log(str1.length);
 
+        //字符串拼接 +
+        console.log("沙漠" + "骆驼");
+        var ageR = 20
+        console.log("Reno 今年" + ageR + "岁");
+        var flag1 = true; 
+        var flag2 = false;
+        console.log(flag1 + 1);
+        console.log(flag2 + 1);
 
+        var year = null
+        console.log(year + 1);
 
-        
+        //获取变量数据类型
+        var num3 = 10;
+        console.log(typeof num3);
+        var num4 = null;
+        console.log(typeof num4);
+        var num5 = prompt('请输入您的年龄')
+        console.log(num5);
+        console.log(typeof num5);
+
     </script>
 </head>
 <body>
