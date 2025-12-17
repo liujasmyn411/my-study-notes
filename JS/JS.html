@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS</title>
     <script>
-       /*  //浏览器弹出输入框，用户可以输入
+        /* //浏览器弹出输入框，用户可以输入
         prompt(info)
         //浏览器弹出警示框
         alert(msg)
@@ -135,17 +135,17 @@
         }
 
         //三元表达式
-        条件表达式 ? 表达式1 : 表达式2 */
+        条件表达式 ? 表达式1 : 表达式2 
 
         //补0案例
-        /* var num10 = prompt('请你输入数字0到59之间')
+        var num10 = prompt('请你输入数字0到59之间')
         num10 = parseInt(num10); // 将字符串转换为数字
         if (num10 < 10) {
             console.log("0" + num10);
         } else {
             console.log(num10);
         }
-        或者 */
+        或者
         var num10 = prompt('请你输入数字0到59之间');
         var time = num10 < 10 ? "0" + num10 : num10;
         alert(time)
@@ -166,11 +166,42 @@
             //...还可以写case
             default:
                 break;
-        }
+        } */
         
-
-
-
+        //for循环
+        /* for (let index = 0; index < array.length; index++) {
+            const element = array[index];
+            
+        } */
+        for(var i = 1; i <= 100; i++){
+            if (i==1) {
+                console.log('年轻');
+            }else if(i==100){
+                console.log('老了');
+            }else{
+                console.log('你好呀');
+            }
+        }
+    //练习题 
+        var sum = 0
+        for (var i =1; i <=100; i++){
+            sum = sum + i
+        }
+        console.log(sum);
+ 
+        var even = 0
+            odd = 0
+        for (var i =1; i <=100; i++){
+            if (i % 2 == 0) {
+                even = even + i
+            } else {
+                odd = odd + i
+            }
+        }
+        console.log('奇数和' + even);
+        console.log('偶数和' + odd);
+        
+        
     </script>
 </head>
 <body>
