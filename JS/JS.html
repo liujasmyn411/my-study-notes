@@ -169,10 +169,9 @@
         } */
         
         //for循环
-        /* for (let index = 0; index < array.length; index++) {
+       /*  for (let index = 0; index < array.length; index++) {
             const element = array[index];
-            
-        } */
+        }
         for(var i = 1; i <= 100; i++){
             if (i==1) {
                 console.log('年轻');
@@ -193,15 +192,50 @@
             odd = 0
         for (var i =1; i <=100; i++){
             if (i % 2 == 0) {
-                even = even + i
+                even = even + i;
             } else {
-                odd = odd + i
+                odd = odd + i;
             }
         }
         console.log('奇数和' + even);
-        console.log('偶数和' + odd);
+        console.log('偶数和' + odd); */
         
-        
+        //一行打印几个星星
+        /* var num = prompt('请输入星星的个数');
+        var str = '';
+        for (var i = 1; i <= num; i++) {
+            str = str + '☆';
+        }
+        console.log(str); */
+
+        //双循环
+        /* for(var i = 1; i <= 3; i++) {
+        console.log('外循环' + i + '次');
+            for(var j = 1; j <= 3; j++) {
+            console.log('内循环' + j + '次');
+            }
+        }
+
+        //while基本结构
+        while (条件表达式) {
+            //循环体
+        }
+        var num = 1;
+        while (num <= 100) {
+            console.log('你好');
+            num++;
+        }
+ */
+        var message = prompt('一闪一闪');
+        while (message !== '亮晶晶') {
+            message = prompt('一闪一闪');
+        }
+        alert('恭喜答对');
+
+        do {
+            // 循环体
+        }while(条件表达式)
+
     </script>
 </head>
 <body>
