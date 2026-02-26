@@ -225,7 +225,7 @@
             console.log('你好');
             num++;
         }
- */
+ *//* 
         /* var message = prompt('一闪一闪');
         while (message !== '亮晶晶') {
             message = prompt('一闪一闪');
@@ -250,14 +250,69 @@
                 max = arr[i];
             }
         }
-        console.log('最大值' + max); */
+        console.log('最大值' + max);
         
-        function fn() {
-            console.log(arguments); // 里面存储了所有传递过来的实参
-            console.log(arguments.length); 
-            
+        
+        var obj = new Object();
+        obj.uname = 'Ll';
+        obj.age = = 22;
+        obj.sayHi = function () {
+            console.log('hello');
         }
-        fn(1, 2, 3);
+
+        function name() {
+            this.属性 = 值;
+            this.方法 = function () {}
+        }
+        new 构造函数名(); */
+
+        //封装自己的数学对象
+        /* var Mymath = {
+            PI: 3.14159,
+            max: function() {
+                var max = arguments[0];
+                for (var i = 1; i < arguments.length; i++) {
+                if (arguments[i] > max)  {
+                    max = arguments[i]
+                    };
+                }
+            return max
+            },
+            min: function() {
+                var min = arguments[0];
+                for (var i = 1; i < arguments.length; i++) {
+                if (arguments[i] < min)  {
+                    min = arguments[i]
+                    };
+                }
+            return min
+            }
+        } 
+        console.log(Mymath.PI);
+        console.log(Mymath.max(1, 10, 99));
+        console.log(Mymath.min(1, 10, 99)); */
+
+        // 随机数
+        console.log(Math.random());
+        // 随机出整数
+        function getRandom(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        console.log(getRandom(1, 10));
+        //随机点名
+        var arr = ['张','李', '王', '刘'];
+        console.log(arr[getRandom(0, arr.length-1)]);
+        
+        //输出现在的时间
+        var date = new Date();
+        console.log(date);
+         
+                
+        
+        
+
+
+
 
     </script>
 </head>
