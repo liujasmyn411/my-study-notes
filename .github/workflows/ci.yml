@@ -1,0 +1,26 @@
+# Actions 页面左侧列表里显示的名字
+name: CI
+
+# 触发时机：任何分支的 push,以及针对任何分支的 PR
+on:
+  push:
+  pull_request:
+
+jobs:
+  # "test" 是 job 名。它跑完产生的 status check 也叫 "test" —— 之后在
+  # Settings → Rules 里配 required status check 时,搜的就是这个词。
+  # 改了这里的名字,分支保护里勾选的那条会永远等不到结果,PR 会卡死。
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 把仓库代码拉到这台临时机器上。几乎每个 job 的第一步都是它
+      - uses: actions/checkout@v4
+
+      # 一个 step = 一条命令。step 串行执行,任意一条返回非零退出码,
+      # 整个 job 判定失败
+      - name: Say hello
+        run: echo "CI is running on ${{ github.ref_name }}"
+
+      - name: List files
+        run: ls -la
