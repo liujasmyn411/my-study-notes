@@ -20,7 +20,7 @@ jobs:
       # 一个 step = 一条命令。step 串行执行,任意一条返回非零退出码,
       # 整个 job 判定失败
       - name: Say hello
-        run: echo "CI is running on ${{ github.ref_name }}"
+        run: exit 1
 
       - name: List files
         run: ls -la
